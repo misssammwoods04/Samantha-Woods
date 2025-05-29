@@ -1,6 +1,6 @@
 ---
-title: "Samantha Woods"
-image:
+# title: "Samantha Woods"
+image: ![](Headshot.jpeg)
 toc: false
 about: 
   template: jolla
