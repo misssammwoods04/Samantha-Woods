@@ -8,7 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - about.qmd 
+      - Project.qmd
+      - Free for All.qmd
+      - Resume.qmd
 
 format:
   html:
