@@ -1,6 +1,6 @@
 ---
 # title: "Samantha Woods"
-image: ![](Headshot.jpeg)
+image: /Users/samwoods/Git/Samantha Woods/Headshot.jpeg
 toc: false
 about: 
   template: jolla
