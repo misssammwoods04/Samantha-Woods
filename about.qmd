@@ -1,5 +1,10 @@
 ---
-title: "About"
+title: "Samantha Woods"
+image:
+toc: false
+about: 
+  template: jolla
+  image-shape: round
 ---
 
 About this site
