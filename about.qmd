@@ -1,10 +1,5 @@
 ---
-# title: "Samantha Woods"
-image: /Users/samwoods/Git/Samantha Woods/Headshot.jpeg
-toc: false
-about: 
-  template: jolla
-  image-shape: round
+title: "Samantha Woods"
 ---
 
 About this site
