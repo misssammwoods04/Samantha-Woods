@@ -5,6 +5,7 @@ toc: false
 about: 
   template: jolla
   image-shape: round
+  image-width: 25em
 ---
 
 hii
