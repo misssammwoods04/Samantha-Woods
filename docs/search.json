@@ -7,6 +7,13 @@
     "text": "hii"
   },
   {
+    "objectID": "Free for All.html",
+    "href": "Free for All.html",
+    "title": "Free for All",
+    "section": "",
+    "text": "library(leaflet)\nlibrary(htmlwidgets)\nlibrary(glue)\n\nimg_width &lt;- 3800\nimg_height &lt;- 2400\n\nleaflet(options = leafletOptions(\n  crs = leafletCRS(crsClass = \"L.CRS.Simple\"),\n  minZoom = -1,\n  maxZoom = 2\n)) |&gt;\n  setView(lng = img_width / 2, lat = img_height / 2, zoom = 0) |&gt;\n  fitBounds(0, 0, img_width, img_height) |&gt;\n onRender(\"\n    function(el, x) {\n      var imageUrl = 'media/Samgallery.jpg';\n      var imageBounds = [[0, 0], [2400, 3800]];\n      L.imageOverlay(imageUrl, imageBounds).addTo(this);\n    }\n  \") |&gt;\n  addRectangles(\n    lng1 = 2731, lat1 = 937,\n    lng2 = 3134, lat2 = 1792,\n    fillOpacity = 0,\n    stroke = FALSE,\n    popup = 'media/ENVS_40_Zine_1.png')"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Samantha Woods",

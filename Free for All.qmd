@@ -6,6 +6,8 @@ format: html
 ```{r}
 
 library(leaflet)
+library(htmlwidgets)
+library(glue)
 
 img_width <- 3800
 img_height <- 2400
@@ -14,20 +16,21 @@ leaflet(options = leafletOptions(
   crs = leafletCRS(crsClass = "L.CRS.Simple"),
   minZoom = -1,
   maxZoom = 2
-))  |> 
-  setView(lng = img_width / 2, lat = img_height / 2, zoom = 0) |> 
-  fitBounds(0, 0, img_width, img_height)  |> 
-  addImageOverlay(
-    "media/Samgallery.jpg",
-    bounds = list(c(0, 0), c(img_height, img_width)),  # Use pixel height/width here
-    opacity = 1
-  ) |> 
+)) |>
+  setView(lng = img_width / 2, lat = img_height / 2, zoom = 0) |>
+  fitBounds(0, 0, img_width, img_height) |>
+ onRender("
+    function(el, x) {
+      var imageUrl = 'media/Samgallery.jpg';
+      var imageBounds = [[0, 0], [2400, 3800]];
+      L.imageOverlay(imageUrl, imageBounds).addTo(this);
+    }
+  ") |>
   addRectangles(
-    lng1 = 2731, lat1 = 937,   # top-left corner (x1, y1)
-  lng2 = 3134, lat2 = 1792,  # bottom-right corner (x2, y2)
-  fillOpacity = 0,            # invisible rectangle but clickable
-  stroke = FALSE,
-  popup = 
-    <img src='media/ENVS_40_Zine-1.png'>
-  )
+    lng1 = 2731, lat1 = 937,
+    lng2 = 3134, lat2 = 1792,
+    fillOpacity = 0,
+    stroke = FALSE,
+    popup = 'media/ENVS_40_Zine_1.png')
+
 ```
