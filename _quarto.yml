@@ -15,11 +15,8 @@ website:
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
+    theme: styles.scss
     toc: true
-
-editor: visual
+    mainfont: Playfair Display 
+    editor: visual
 
