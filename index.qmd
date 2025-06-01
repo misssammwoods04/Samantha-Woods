@@ -6,6 +6,11 @@ about:
   template: jolla
   image-shape: round
   image-width: 25em
+  links:
+    - text: GitHub
+      href: https://github.com/misssammwoods04
+    - text: Email
+      href: mailto:swoods@ucsb.edu
 ---
 
 Hi! My name is Samantha Woods (everyone calls me Sam) and I am currently a second-year undergraduate student at UCSB, majoring in Environmental Studies and minoring in Feminist Studies.
