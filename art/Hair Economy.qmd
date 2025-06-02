@@ -2,5 +2,6 @@
 title: "Hair Economy"
 format: html
 lightbox: true
+title-block-banner: true
 ---
 
