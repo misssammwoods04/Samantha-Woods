@@ -7,6 +7,7 @@ format: html
 
 <map name="gallerymap">
   <area shape="rect" coords="2686,923,3176,1813" href="media/Hair Economy.html">
+  <area shape="rect" coords="2027,908,2403,1768" href="media/HookUp.html">
 </map>
 
 <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
