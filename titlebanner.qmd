@@ -1,4 +1,0 @@
-
-freeze: auto
-
-title-block-banner: true
