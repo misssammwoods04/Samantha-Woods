@@ -5,3 +5,28 @@ lightbox: true
 title-block-banner: true
 ---
 
+For my ENV S 40 course, Critical Thinking and Evidence-Based Reasoning for the Environment, I created a zine titled "The Hair Economy", which explores the environmental impact of synthetic hair commonly used in protective styles by Black women. This project investigates how synthetic hair—produced from plastic—contributes to pollution through toxic chemical emissions during manufacturing and waste accumulation after use.
+
+While synthetic hair is often chosen for its affordability and versatility, its environmental cost is rarely discussed. My goal with this zine was to raise awareness about the ecological footprint of synthetic hair, without vilifying the cultural significance of protective styling. I also included accessible, affordable alternatives and sustainable practices to empower individuals to make informed choices that support both personal expression and environmental health.
+
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-1.png)
+
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-2.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-3.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-4.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-5.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-6.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-7.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-8.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-9.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-10.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-11.png)
+![](/Users/samwoods/Git/Samantha Woods/media/ENVS_40_Zine-12.png)
+
+
+
+
+
+
+
+

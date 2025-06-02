@@ -39,6 +39,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-0002613cb60c884b9a1fa8ea72d537d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -144,6 +147,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p>For my ENV S 40 course, Critical Thinking and Evidence-Based Reasoning for the Environment, I created a zine titled “The Hair Economy”, which explores the environmental impact of synthetic hair commonly used in protective styles by Black women. This project investigates how synthetic hair—produced from plastic—contributes to pollution through toxic chemical emissions during manufacturing and waste accumulation after use.</p>
+<p>While synthetic hair is often chosen for its affordability and versatility, its environmental cost is rarely discussed. My goal with this zine was to raise awareness about the ecological footprint of synthetic hair, without vilifying the cultural significance of protective styling. I also included accessible, affordable alternatives and sustainable practices to empower individuals to make informed choices that support both personal expression and environmental health.</p>
+<p><a href="media/ENVS_40_Zine-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="media/ENVS_40_Zine-1.png" class="img-fluid"></a></p>
 
 
 
@@ -566,6 +572,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
