@@ -1,4 +1,10 @@
 ---
-title: "Free for All"
+title: "My Art"
 format: html
 ---
+
+<img src="media/gallery.png" usemap="#gallerymap" width="100%" alt="My Art Gallery">
+
+<map name = "gallerymap">
+  
+  <area shape = "rect" coords="2686,923,3176,1813" alt = "Hair Guide for Sustianable Engagement in the Hair Economy" href = "Hair Economy">
