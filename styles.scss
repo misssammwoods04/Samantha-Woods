@@ -1,25 +1,9 @@
 /*-- scss:defaults --*/
 
-// import font: Playfair Display
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+// import font: Playfair Display @import url('[https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght\@0,400](https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400){.uri}..900;1,400..900&display=swap');
 
-// color-scheme
-$light-blue: #F3F4F7;
-$pink: #FFEBF4;
-$maroon: #D89797;
-$purple: #848EAE;
-$light-green: #F3FFE1;
-$green: #CEFF85;
+// color-scheme $light-blue: #F3F4F7;$pink: #FFEBF4; $maroon: #D89797;$purple: #848EAE; $light-green: #F3FFE1;$green: #CEFF85;
 
+//base document colors \$navbar-bg: $pink; // navbar$navbar-fg: $maroon; // navbar foreground elements$navbar-hl: $purple; // highlight color when hovering over navbar links$body-bg: $light-blue; // page background$footer-bg: $purple; // footer$link-color: \$purple;//hyperlinks
 
-//base document colors
-$navbar-bg: $pink; // navbar 
-$navbar-fg: $maroon; // navbar foreground elements
-$navbar-hl: $purple; // highlight color when hovering over navbar links
-$body-bg: $light-blue; // page background
-$footer-bg: $purple; // footer
-$link-color: $purple;//hyperlinks 
-
-// Inline code 
-$code-bg: $maroon; // inline code background color
-$code-color: $purple;// inline code text color
+// Inline code \$code-bg: $maroon; // inline code background color$code-color: \$purple;// inline code text color
