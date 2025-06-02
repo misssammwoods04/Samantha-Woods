@@ -10,7 +10,7 @@ format: html
   <area shape="rect" coords="2027,908,2403,1768" href="media/HookUp.html">
   <area shape="rect" coords="1863,1108,1974,1353" href = "media/StressMap.html">
   <area shape="rect" coords="1646,1107,1785,1365" href = "media/Women.html">
-  <area shape="rect" coords="822,1090,1097,1362" href = "media/friend.html">
+  <area shape="rect" coords="822,1090,1097,1362" href = "media/friends.html">
   <area shape="rect" coords="459,1052,695,1378" href = "media/Blackppl.html">
 </map>
 
