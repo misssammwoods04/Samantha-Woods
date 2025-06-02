@@ -1,7 +1,3 @@
 ---
-title: "Samantha Woods"
+title: "About Me"
 ---
-
-```{r}
-1 + 1
-```

@@ -2,3 +2,5 @@
 title: "Resume"
 format: html
 ---
+
+<img src="media/gallery.png" alt="Gallery" usemap="#gallerymap" width="100%"/>
