@@ -1,5 +1,0 @@
----
-title: "Hair Economy"
-format: html
-title-block-banner: true
----
