@@ -7,4 +7,5 @@ format: html
 
 <map name = "gallerymap">
   
-  <area shape = "rect" coords="2686,923,3176,1813" alt = "Hair Guide for Sustianable Engagement in the Hair Economy" href = "Hair Economy">
+  <area shape = "rect" coords="2686,923,3176,1813" alt = "Hair Guide for Sustianable Engagement in the Hair Economy" href="Hair-Economy.qmd">
+</map>
