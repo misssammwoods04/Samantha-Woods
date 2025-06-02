@@ -1,5 +1,8 @@
 ---
 title: "Hair Economy"
 format: html
+filters: 
+  - lightbox
+lightbox: auto
 ---
 
