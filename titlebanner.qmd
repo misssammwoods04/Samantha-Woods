@@ -1,7 +1,3 @@
----
-title: "titlebanner"
-format: html
----
 
 freeze: auto
 
