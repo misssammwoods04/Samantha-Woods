@@ -3,7 +3,7 @@ title: "My Art"
 format: html
 ---
 
-<img src="media/gallery.png" usemap="#gallerymap" width="100%" alt="My Art Gallery">
+<img src="media/gallery.png" usemap="#gallerymap" width="3800" alt="My Art Gallery">
 
 <map name = "gallerymap">
   
