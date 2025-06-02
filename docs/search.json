@@ -5,19 +5,5 @@
     "title": "Samantha Woods",
     "section": "",
     "text": "Hi! My name is Samantha Woods (everyone calls me Sam) and I am currently a second-year undergraduate student at UCSB, majoring in Environmental Studies and minoring in Feminist Studies."
-  },
-  {
-    "objectID": "art/artyaml.html",
-    "href": "art/artyaml.html",
-    "title": "options specified here will apply to all posts in this folder",
-    "section": "",
-    "text": "options specified here will apply to all posts in this folder\n\n\nprevents posts from re-rendering unless explicitly told to do so (for more, see https://quarto.org/docs/projects/code-execution.html#freeze)\nfreeze: auto\n\n\nenable banner style title blocks (see https://quarto.org/docs/authoring/title-blocks.html)\ntitle-block-banner: true"
-  },
-  {
-    "objectID": "titlebanner.html",
-    "href": "titlebanner.html",
-    "title": "Samantha Woods",
-    "section": "",
-    "text": "freeze: auto\ntitle-block-banner: true"
   }
 ]
