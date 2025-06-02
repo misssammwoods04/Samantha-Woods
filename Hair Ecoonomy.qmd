@@ -1,5 +1,0 @@
----
-title: "Hair Ecoonomy"
-format: html
----
-
