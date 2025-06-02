@@ -1,15 +1,15 @@
 /*-- scss:defaults --*/
 
 // import font: Playfair Display
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap')Add commentMore actions
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 // color-scheme
 $light-blue: #F3F4F7;
 $pink: #FFEBF4;
 $maroon: #D89797;
 $yellow: #F7EAA1;
-$purple: #9B87AB
-$green: #CEFF85
+$purple: #9B87AB;
+$green: #CEFF85;
 
 
 //base document colors
@@ -18,8 +18,8 @@ $navbar-fg: $maroon; // navbar foreground elements
 $navbar-hl: $purple; // highlight color when hovering over navbar links
 $body-bg: $light-blue; // page background
 $footer-bg: $yellow; // footer
-$link-color: $purple//hyperlinks 
+$link-color: $purple;//hyperlinks 
 
 // Inline code 
 $code-bg: $purple; // inline code background color
-$code-color: $maroon// inline code text color
+$code-color: $maroon;// inline code text color
