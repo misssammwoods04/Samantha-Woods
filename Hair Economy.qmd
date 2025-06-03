@@ -1,7 +1,11 @@
 ---
 title: "Hair Guide for Sustainable Engagement in the Hair Economy"
 format: html
-lightbox: auto
+filters: 
+  - lightbox
+lightbox:
+  match: auto
+  effect: fade
 categories:
   - zine
 about:
@@ -11,26 +15,24 @@ about:
       href: "https://guides.lib.purdue.edu/loudonpaper/what-is-a-zine"
 title-block-banner: true
 ---
-
 For my ENV S 40 course, Critical Thinking and Evidence-Based Reasoning for the Environment, I created a zine titled "Hair Guide for Sustainable Engagement in the Hair Economy ", which explores the environmental impact of synthetic hair commonly used in protective styles by Black women. This project investigates how synthetic hair—produced from plastic—contributes to pollution through toxic chemical emissions during manufacturing and waste accumulation after use.
 
 While synthetic hair is often chosen for its affordability and versatility, its environmental cost is rarely discussed. My goal with this zine was to raise awareness about the ecological footprint of synthetic hair, without vilifying the cultural significance of protective styling. I also included accessible, affordable alternatives and sustainable practices to empower individuals to make informed choices that support both personal expression and environmental health.
 
 
 ::: {layout-ncol=4} 
-
-![](media/HairZine_1.jpg)
-![](media/HairZine_2.jpg)
-![](media/HairZine_3.jpg)
-![](media/HairZine_4.jpg)
-![](media/HairZine_5.jpg)
-![](media/HairZine_6.jpg)
-![](media/HairZine_7.jpg)
-![](media/HairZine_8.jpg)
-![](media/HairZine_9.jpg)
-![](media/HairZine_10.jpg)
-![](media/HairZine_11.jpg)
-![](media/HairZine_12.jpg)
+![](media/HairZine_1.jpg){.lightbox}{group="zine"}
+![](media/HairZine_2.jpg){.lightbox}{group="zine"}
+![](media/HairZine_3.jpg){.lightbox}{group="zine"}
+![](media/HairZine_4.jpg){.lightbox}{group="zine"}
+![](media/HairZine_5.jpg){.lightbox}{group="zine"}
+![](media/HairZine_6.jpg){.lightbox}{group="zine"}
+![](media/HairZine_7.jpg){.lightbox}{group="zine"}
+![](media/HairZine_8.jpg){.lightbox}{group="zine"}
+![](media/HairZine_9.jpg){.lightbox}{group="zine"}
+![](media/HairZine_10.jpg){.lightbox}{group="zine"}
+![](media/HairZine_11.jpg){.lightbox}{group="zine"}
+![](media/HairZine_12.jpg){.lightbox}{group="zine"}
 :::
 
 
