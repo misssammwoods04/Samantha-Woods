@@ -18,7 +18,7 @@ For my ENV S 40 course, Critical Thinking and Evidence-Based Reasoning for the E
 While synthetic hair is often chosen for its affordability and versatility, its environmental cost is rarely discussed. My goal with this zine was to raise awareness about the ecological footprint of synthetic hair, without vilifying the cultural significance of protective styling. I also included accessible, affordable alternatives and sustainable practices to empower individuals to make informed choices that support both personal expression and environmental health.
 
 
-::: {layout-ncol=2} 
+::: {layout-ncol=1} 
 ![](media/HairZine_1.jpg){.lightbox style="display: block; margin: auto;" group="zine"}
 ![](media/HairZine_2.jpg){.lightbox style="display: block; margin: auto;" group="zine"}
 ![](media/HairZine_3.jpg){.lightbox style="display: block; margin: auto;" group="zine"}
