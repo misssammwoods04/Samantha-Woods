@@ -1,6 +1,11 @@
 ---
 title: "Hair Guide for Sustainable Engagement in the Hair Economy"
 format: html
+categories:
+  - zine
+  filters: 
+  - lightbox
+lightbox: auto
 about:
   template: jolla
   links:
