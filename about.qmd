@@ -1,11 +1,11 @@
 ---
 title: "Campus Involvement"
-about: 
+about:
   links: 
-    - text: "YCT at UCSB"
-      href: "https://www.yourchildrenstreesatucsb.org/"
-    - text: "Sprout Up at UCSB"
-      href: "https://www.sproutup.org/ucsb"
+    - text: YCT at UCSB
+      href: https://www.yourchildrenstreesatucsb.org/
+    - text: Sprout Up at UCSB"
+      href: https://www.sproutup.org/ucsb
 ---
 
 
