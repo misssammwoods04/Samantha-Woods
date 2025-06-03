@@ -1,11 +1,9 @@
 ---
 title: "Hair Guide for Sustainable Engagement in the Hair Economy"
 format: html
-filters: 
-  - lightbox
 lightbox:
-  match: auto
-  effect: fade
+      match: auto
+      effect: fade
 categories:
   - zine
 about:
@@ -21,18 +19,18 @@ While synthetic hair is often chosen for its affordability and versatility, its 
 
 
 ::: {layout-ncol=4} 
-![](media/HairZine_1.jpg){.lightbox}{group="zine"}
-![](media/HairZine_2.jpg){.lightbox}{group="zine"}
-![](media/HairZine_3.jpg){.lightbox}{group="zine"}
-![](media/HairZine_4.jpg){.lightbox}{group="zine"}
-![](media/HairZine_5.jpg){.lightbox}{group="zine"}
-![](media/HairZine_6.jpg){.lightbox}{group="zine"}
-![](media/HairZine_7.jpg){.lightbox}{group="zine"}
-![](media/HairZine_8.jpg){.lightbox}{group="zine"}
-![](media/HairZine_9.jpg){.lightbox}{group="zine"}
-![](media/HairZine_10.jpg){.lightbox}{group="zine"}
-![](media/HairZine_11.jpg){.lightbox}{group="zine"}
-![](media/HairZine_12.jpg){.lightbox}{group="zine"}
+![](media/HairZine_1.jpg){.lightbox group="zine"}
+![](media/HairZine_2.jpg){.lightbox group="zine"}
+![](media/HairZine_3.jpg){.lightbox group="zine"}
+![](media/HairZine_4.jpg){.lightbox group="zine"}
+![](media/HairZine_5.jpg){.lightbox group="zine"}
+![](media/HairZine_6.jpg){.lightbox group="zine"}
+![](media/HairZine_7.jpg){.lightbox group="zine"}
+![](media/HairZine_8.jpg){.lightbox group="zine"}
+![](media/HairZine_9.jpg){.lightbox group="zine"}
+![](media/HairZine_10.jpg){.lightbox group="zine"}
+![](media/HairZine_11.jpg){.lightbox group="zine"}
+![](media/HairZine_12.jpg){.lightbox group="zine"}
 :::
 
 
