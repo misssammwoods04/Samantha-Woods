@@ -4,7 +4,7 @@ format: html
 ---
 Welcome to my gallery!
 
-<img src="gallery.png" usemap="#gallerymap" style="width: 100%; height: auto;" alt="My Art Gallery">
+<img src="media/gallery.png" usemap="#gallerymap" style="width: 100%; height: auto;" alt="My Art Gallery">
 
 <map name="gallerymap">
   <area shape="rect" coords="2686,923,3176,1813" href="Hair Economy.html">
