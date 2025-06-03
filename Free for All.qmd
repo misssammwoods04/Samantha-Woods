@@ -2,6 +2,7 @@
 title: "My Art"
 format: html
 ---
+Welcome to my gallery!
 
 <img src="media/gallery.png" usemap="#gallerymap" style="width: 100%; height: auto;" alt="My Art Gallery">
 
