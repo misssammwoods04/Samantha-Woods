@@ -20,7 +20,7 @@ While synthetic hair is often chosen for its affordability and versatility, its 
 
 
 ::: {layout-ncol=4} 
-![](media/HairZine_1.jpg){.lightbox group="zine"}
+![](media/HairZine_1.jpg){.lightbox group="zine" width=1650 height=2550}
 ![](media/HairZine_2.jpg){.lightbox group="zine"}
 ![](media/HairZine_3.jpg){.lightbox group="zine"}
 ![](media/HairZine_4.jpg){.lightbox group="zine"}
