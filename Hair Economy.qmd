@@ -16,17 +16,17 @@ While synthetic hair is often chosen for its affordability and versatility, its 
 ::: {layout-ncol=4} 
 
 ![](media/HairZine_1.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_2.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_3.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_4.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_5.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_6.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_7.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_8.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_9.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_10.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_11.jpg)
-![](/Users/samwoods/Git/Samantha Woods/media/HairZine_12.jpg)
+![](media/HairZine_2.jpg)
+![](media/HairZine_3.jpg)
+![](media/HairZine_4.jpg)
+![](media/HairZine_5.jpg)
+![](media/HairZine_6.jpg)
+![](media/HairZine_7.jpg)
+![](media/HairZine_8.jpg)
+![](media/HairZine_9.jpg)
+![](media/HairZine_10.jpg)
+![](media/HairZine_11.jpg)
+![](media/HairZine_12.jpg)
 :::
 
 
