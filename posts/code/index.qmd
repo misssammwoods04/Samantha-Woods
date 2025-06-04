@@ -6,7 +6,7 @@ image: code.gif
 categories: Coding 
 ---
 
-This is a sample of my code from my personal data project! I am coding a plot of my data to show if there is any correlation between my hours of sleep (predictor variable) and my stress level (response variable). 
+This is a sample of my code from my personal data project for my Environmental Statistics class! I coded a plot of my data to show if there is any correlation between my hours of sleep (predictor variable) and my stress level (response variable). 
 
 
 
