@@ -1,5 +1,5 @@
 ---
-title: "StressMap"
+title: "Stress Maps"
 format: html
 lightbox:
       match: auto
@@ -11,5 +11,6 @@ fontsize: 14pt
 ---
 
 This is my most recent project, titled "Stress Maps," which I created for my Environmental Statistics course. For the assignment, we were asked to design an affective visualization based on personal data collected throughout the quarter. I centered my project around the question: “Do I leave campus more often when I feel stressed?” My response variable was my daily stress level, and my predictor variables included the number of assignments and social plans each day, the purpose of my travel off campus, and my method of transportation. This project allowed me to visualize how academic and social pressures influence my movement patterns and emotional well-being.
+
 
 ![](media/Stressmaps.jpg){.lightbox style="display: block; margin: auto;"}
