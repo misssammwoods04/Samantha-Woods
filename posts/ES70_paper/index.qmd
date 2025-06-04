@@ -1,5 +1,6 @@
 ---
 title: "ENVST Midterm Paper"
+description: Midterm paper for my Environmental Ethics class
 format: html
 image: paper.jpg
 categories: Papers
