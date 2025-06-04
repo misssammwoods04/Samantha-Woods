@@ -12,7 +12,6 @@ about:
     - text: "What is a Zine?"
       href: "https://guides.lib.purdue.edu/loudonpaper/what-is-a-zine"
 title-block-banner: true
-fontsize: 14pt
 ---
 
 This is the first zine I ever made! Titled "Black People Don't Do That: Canon Events of Black Children," I created it as the final project for my first Feminist Studies course, Women of Color, which I took during the summer before my freshman year. The zine serves as a personal reflection on my experience growing up as a Black child, exploring the formative, often unspoken moments—what I call “canon events”—that shape identity, perception, and belonging.

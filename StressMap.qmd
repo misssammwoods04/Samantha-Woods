@@ -7,7 +7,6 @@ lightbox:
 categories:
   - Affective Visualization
 title-block-banner: true
-fontsize: 14pt
 ---
 
 This most recent project, titled Stress Maps, was created for my Environmental Statistics course in response to an assignment on affective data visualization. We were asked to collect personal data throughout the quarter and design a visual representation that captures the emotional dimension of that data.

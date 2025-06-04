@@ -12,7 +12,6 @@ about:
     - text: "What is a Zine?"
       href: "https://guides.lib.purdue.edu/loudonpaper/what-is-a-zine"
 title-block-banner: true
-fontsize: 14pt
 ---
 
 I created this zine titled, "A Sort of How-To to Hooking Up and Hookup Culture + Some Hookup Reminders" for my Sex, Love, and Romance course during the spring quarter of my freshman year. After observing how many of my peers were engaging in hookup culture, I realized how much knowledge—emotional, physical, and cultural—is needed to navigate it thoughtfully. This zine became a way for me to process and make sense of that behavior, especially as I adjusted to a new environment and social landscape.
