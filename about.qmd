@@ -1,5 +1,5 @@
 ---
-title: "Campus Involvement"
+title: "About Me"
 format: html
 lightbox:
       match: auto
@@ -11,10 +11,25 @@ about:
       href: https://www.yourchildrenstreesatucsb.org/
     - text: Sprout Up at UCSB
       href: https://www.sproutup.org/ucsb
+toc: true
+---
+# My Background
+
+I grew up in Whittier, California, alongside my twin sister and our loving parents. I’m especially grateful for the deep appreciation for nature they passed on to me. When my dad wasn’t busy running his orthopedic surgery practice, he was in our yard, cultivating an oasis of fruit trees and ferns. Some of my favorite childhood memories are of picking grapefruits, peaches, lemons, and tangerines with him.
+
+My mom’s compassion for animals was equally influential. Our home was always filled with dogs, and she never hesitated to help any injured animal that crossed our path. I remember nursing birds with broken wings, and rescuing bees and other critters from drowning in the pool, following her example of empathy and care.
+
+Without my parents’ influence, I wouldn’t be pursuing a degree in Environmental Studies. Their passion helped me develop a deep respect for the natural world—and a commitment to protecting it however I can.
+
+![](media/fam.jpg){.lightbox style="display: block; margin: auto;"}
+
 ---
 
+# Campus Involvement 
 
 I am currently involved in several environmental organizations across campus.
+
+## Your Children's Trees at UCSB
 
 Over the course of my second year at UCSB, I interned with *Your Children’s Trees*, a community-centered organization dedicated to environmental restoration through tree planting.
 
@@ -31,6 +46,9 @@ In addition to hands-on restoration work, I also helped engage the local communi
 ![Me and other YCT members carrying irrigation piping](media/IMG_7495.jpg){.lightbox style="display: block; margin: auto;" group="YCT"}
 :::
 
+---
+
+## Sprout Up at UCSB
 
 Additionally, I have been involved in *Sprout Up* at UCSB as an instructor. UCSB is home to the largest chapter of *Sprout Up* dedicated to providing environmental education to first and second graders across Goleta. Alongside my teaching team, I introduced topics such as waste management, water conservation, and bee pollination, helping young students build a foundation in sustainability and environmental awareness.
 

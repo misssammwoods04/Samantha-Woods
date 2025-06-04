@@ -1,6 +1,8 @@
 ---
 title: "ENVST Midterm Paper"
 format: html
+image: paper.jpg
 ---
+
 
 <iframe src="media/ES70.pdf" width="100%" height="600px" style="border: none;"></iframe>
