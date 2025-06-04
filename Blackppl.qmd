@@ -1,5 +1,5 @@
 ---
-title: "Women"
+title: "Black People Don't Do That: Cannon Events of Black Children"
 format: html
 lightbox:
       match: auto
