@@ -1,0 +1,6 @@
+---
+title: "Coding Project"
+format: html
+image: code.gif
+---
+
