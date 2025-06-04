@@ -18,20 +18,20 @@ Feel free to click through the collages!
 
 ::: {layout-ncol=2}
 
-![](media/Roxy_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+![Roxy](media/Roxy_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 
-![](media/Bella_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+![Bella](media/Bella_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 
-![](media/Kaylee_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+![Kaylee](media/Kaylee_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 
-![](media/Janell_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+![Janell](media/Janell_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 
-![](media/Sofia_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+![Sofia](media/Sofia_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 
-![](media/Leah_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+![Leah](media/Leah_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 
-![](media/Evelyn_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+![Evelyn](media/Evelyn_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 
-![](media/Sara_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+![Sara](media/Sara_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 :::
 
