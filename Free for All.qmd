@@ -4,6 +4,11 @@ format: html
 ---
 Welcome to my gallery!
 
+I created an interactive representation of the art I’ve made since entering college. Since moving to Santa Barbara, my primary medium has been Procreate, thanks to its versatility and ease of use—especially important given the limited space in my college apartment to store acrylic paints and canvases. I've completed a wide range of projects across different courses, and this felt like the perfect opportunity to showcase that creative work in one place.
+
+Click on each piece to learn more about my projects!
+
+
 <img src="media/gallery.png" usemap="#gallerymap" style="width: 100%; height: auto;" alt="My Art Gallery">
 
 <map name="gallerymap">
