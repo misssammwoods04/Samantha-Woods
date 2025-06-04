@@ -5,7 +5,7 @@ lightbox:
       match: auto
       effect: fade
 categories:
-  - zine
+  - Affective Visualization
 title-block-banner: true
 fontsize: 14pt
 ---

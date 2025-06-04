@@ -1,4 +1,7 @@
 ---
 title: "Resume"
 format: html
+title-block-banner: true
 ---
+
+<iframe src="media/SW_Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>

@@ -12,6 +12,8 @@ fontsize: 14pt
 
 This was the first project I made with *Procreate*! I made this series of collages as graduation gifts to my hometown friends. It's hard to believe that two year has already passed!
 
+
+
 Feel free to click through the collages!
 
 ::: {layout-ncol=2}
