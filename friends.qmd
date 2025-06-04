@@ -10,7 +10,7 @@ categories:
 
 This was the first project I made with *Procreate*! I made this series of collages as graduation gifts to my hometown friends. It's hard to believe that two year has already passed!
 
-::: {layout="[[1, 1][1,1] [1,1][1,1]]"}
+::: {layout-ncol=2}
 
 ![](media/Roxy_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
 
