@@ -1,5 +1,31 @@
 ---
-title: "friends"
+title: "Collages Before College"
 format: html
+lightbox:
+      match: auto
+      effect: fade
+categories:
+  - collage
 ---
+
+This was the first project I made with *Procreate*! I made this series of collages as graduation gifts to my hometown friends. It's hard to believe that two year has already passed!
+
+::: {layout="[[1, 1][1,1] [1,1][1,1]]"}
+
+![](media/Roxy_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+
+![](media/Bella_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+
+![](media/Kaylee_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+
+![](media/Janell_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+
+![](media/Sofia_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+
+![](media/Leah_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+
+![](media/Evelyn_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+
+![](media/Sara_2023.jpg){.lightbox style="display: block; margin: auto;" group="HS"}
+:::
 
