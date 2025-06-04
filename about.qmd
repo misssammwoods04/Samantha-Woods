@@ -24,11 +24,11 @@ In addition to hands-on restoration work, I also helped engage the local communi
 
 ::: {layout="[[1, 1, 1]]"}
 
-![](media/IMG_7493.jpg){.lightbox style="display: block; margin: auto;" group="YCT" description="Me and other YCT members conducting tree maintenance"}
+![Me and other YCT members conducting tree maintenance](media/IMG_7493.jpg){.lightbox style="display: block; margin: auto;" group="YCT"}
 
-![](media/IMG_7494.jpg){.lightbox style="display: block; margin: auto;" group="YCT" description="Me and other YCT members planting a tree and setting up a tree gator"}
+![Me and other YCT members planting a tree and setting up a tree gator](media/IMG_7494.jpg){.lightbox style="display: block; margin: auto;" group="YCT"}
 
-![](media/IMG_7495.jpg){.lightbox style="display: block; margin: auto;" group="YCT" description="Me and other YCT members carrying irrigation piping"}
+![Me and other YCT members carrying irrigation piping](media/IMG_7495.jpg){.lightbox style="display: block; margin: auto;" group="YCT"}
 :::
 
 
@@ -37,10 +37,9 @@ Additionally, I have been involved in *Sprout Up* at UCSB as an instructor. UCSB
 
 ::: {layout="[[1, 1, 1]]"} 
 
-![](media/SproutUp_1.jpg){.lightbox style="display: block; margin: auto;" group="sprout" description=" Sprout Up Fall 2024"}
+![Sprout Up Fall 2024](media/SproutUp_1.jpg){.lightbox style="display: block; margin: auto;" group="sprout"}
 
-![](media/SproutUp_2.jpg){.lightbox style="display: block; margin: auto;" group="sprout" description="Sprout Up Fall 2024"}
+![Sprout Up Fall 2024](media/SproutUp_2.jpg){.lightbox style="display: block; margin: auto;" group="sprout"}
 
-![](media/SproutUp_3.jpg) {.lightbox style="display: block; margin: auto;" group="sprout" description="Sprout Up Winter 2025"}
-
+![Sprout Up Winter 2024](media/SproutUp_3.jpg){.lightbox style="display: block; margin: auto;" group="sprout"}
 :::
