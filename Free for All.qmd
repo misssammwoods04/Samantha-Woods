@@ -1,7 +1,6 @@
 ---
 title: "My Gallery"
 format: html
-
 ---
 Welcome to my gallery!
 
@@ -28,4 +27,4 @@ Click on each piece to learn more about my projects!
   });
 </script>
 
-<a href="https://procreate.com/procreate" class="button">Click Me </a>
+<a href="https://procreate.com/procreate" target="_blank" class="button">What is Procreate?</a>
