@@ -6,7 +6,7 @@ image: paper.jpg
 categories: Papers
 ---
 
-I wrote this paper for my Environmental Ethics course during the past winter quarter. The assignment focused on the Channgel Islands Pig Eradication case, where we were asked to evaluate the morality of culling feral pigs to protect native plant and fox species. As part of the prompt, we were required to take a clear stance and support our position using the ethical theories and frameworks we studied in class.
+I wrote this paper for my Environmental Ethics course during the past winter quarter. The assignment focused on the Channel Islands Pig Eradication case, where we were asked to evaluate the morality of culling feral pigs to protect native plant and fox species. As part of the prompt, we were required to take a clear stance and support our position using the ethical theories and frameworks we studied in class.
 
 
 <iframe src="media/ES70.pdf" width="100%" height="600px" style="border: none;"></iframe>
