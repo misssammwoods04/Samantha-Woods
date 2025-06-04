@@ -38,6 +38,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-0002613cb60c884b9a1fa8ea72d537d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -135,14 +138,49 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="quarto-layout-panel" data-layout="[[1, 1, 1]]">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
-<p><img src="media/IMG_7493.jpg" class="img-fluid"> <img src="media/IMG_7494.jpg" class="img-fluid"> <img src="media/IMG_7495.jpg" class="img-fluid"></p>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><a href="media/IMG_7493.jpg" class="lightbox" data-gallery="YCT" data-glightbox="description: .lightbox-desc-1;"><img src="media/IMG_7493.jpg" class="img-fluid" style="display: block; margin: auto;"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><a href="media/IMG_7494.jpg" class="lightbox" data-gallery="YCT" data-glightbox="description: .lightbox-desc-2;"><img src="media/IMG_7494.jpg" class="img-fluid" style="display: block; margin: auto;"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><a href="media/IMG_7495.jpg" class="lightbox" data-gallery="YCT" data-glightbox="description: .lightbox-desc-3;"><img src="media/IMG_7495.jpg" class="img-fluid" style="display: block; margin: auto;"></a></p>
 </div>
 </div>
 </div>
 <p>Additionally, I have been involved in <em>Sprout Up</em> at UCSB as an instructor. UCSB is home to the largest chapter of <em>Sprout Up</em> dedicated to providing environmental education to first and second graders across Goleta. Alongside my teaching team, I introduced topics such as waste management, water conservation, and bee pollination, helping young students build a foundation in sustainability and environmental awareness.</p>
+<div>
+</div>
+<div class="quarto-layout-panel" data-layout="[[1, 1, 1]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<p><img src="media/SproutUp_1.jpg" class="img-fluid">{.lightbox style=“display: block; margin: auto;” group=“sprout” description=” Sprout Up Fall 2024”}</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><a href="media/SproutUp_2.jpg" class="lightbox" data-gallery="sprout" data-glightbox="description: .lightbox-desc-4;"><img src="media/SproutUp_2.jpg" class="img-fluid" style="display: block; margin: auto;"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<p><img src="media/SproutUp_3.jpg" class="img-fluid"> {.lightbox style=“display: block; margin: auto;” group=“sprout” description=“Sprout up Winter 2025”}</p>
+</div>
+</div>
+</div>
 
 
+<div class="hidden" aria-hidden="true">
+<div class="glightbox-desc lightbox-desc-1">
+<p>Me and other YCT members conducting tree maintenance</p>
+</div>
+<div class="glightbox-desc lightbox-desc-2">
+<p>Me and other YCT members planting a tree and setting up a tree gator</p>
+</div>
+<div class="glightbox-desc lightbox-desc-3">
+<p>Me and other YCT members carrying irrigation piping</p>
+</div>
+<div class="glightbox-desc lightbox-desc-4">
+<p>Sprout Up Fall 2024</p>
+</div>
+</div>
 </main> 
   <hr class="about-sep">
    <div class="about-links">
@@ -566,6 +604,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"bottom","loop":false,"openEffect":"fade","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
