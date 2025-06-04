@@ -12,7 +12,6 @@ about:
     - text: "What is a Zine?"
       href: "https://guides.lib.purdue.edu/loudonpaper/what-is-a-zine"
 title-block-banner: true
-fontsize: 14pt
 ---
 For my ENV S 40 course, Critical Thinking and Evidence-Based Reasoning for the Environment, I created a zine titled "Hair Guide for Sustainable Engagement in the Hair Economy ", which explores the environmental impact of synthetic hair commonly used in protective styles by Black women. This project investigates how synthetic hair—produced from plastic—contributes to pollution through toxic chemical emissions during manufacturing and waste accumulation after use.
 
