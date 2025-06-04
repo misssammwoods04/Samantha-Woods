@@ -1,5 +1,35 @@
 ---
 title: "Women"
 format: html
+lightbox:
+      match: auto
+      effect: fade
+categories:
+  - zine
+about:
+  template: jolla
+  links:
+    - text: "What is a Zine?"
+      href: "https://guides.lib.purdue.edu/loudonpaper/what-is-a-zine"
+title-block-banner: true
+fontsize: 14pt
 ---
+
+This is the first zine I ever made! Titled "Black People Don't Do That: Canon Events of Black Children," I created it as the final project for the first Feminist Studies course I took during the summer before my freshman year. The zine serves as a personal reflection on my experience growing up as a Black child, exploring the formative, often unspoken moments—what I call “canon events”—that shape identity, perception, and belonging.
+
+Don't forget to click through the pages!
+
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 2.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 3.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 4.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 5.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 6.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 7.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 8.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 9.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+![](media/Black_People_Don't_Do_That_:_Canon_Events_of_Black_Children 10.jpg){.lightbox style="display: block; margin: auto;" group="blk"}
+
+
+
 
