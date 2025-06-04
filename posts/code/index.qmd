@@ -1,6 +1,11 @@
 ---
-title: "Coding"
+title: "Code"
 format: html
 image: code.gif
+category: Coding 
 ---
+
+```{r}
+p_data <-- read.csv("")
+```
 

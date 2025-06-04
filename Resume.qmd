@@ -1,7 +1,6 @@
 ---
 title: "Resume"
 format: html
-title-block-banner: true
 ---
 This is my most recent resume, though I haven't had the chance to update it with my current work.
 

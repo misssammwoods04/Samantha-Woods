@@ -1,0 +1,32 @@
+Date,Leave IV/campus/home?,Time of Day (leave),Stress Level,# HW To-do,Social Plans,Rest Time,Amount of Sleep,Means of Travel,Purpose of Travel
+04/15/25,Yes,Morning,4,3,0,5 hrs,7 hrs,bus,errands
+04/18/25,Yes,Night,5,1,1,5 hrs,8 hrs,car,dinner
+04/19/25,Yes,Morning,3,4,1,8 hrs,5 hrs,bus,work
+04/19,Yes,Afternoon,2,4,1,8 hrs,5 hrs,bus,movie
+04/20/25,Yes,Early Afternoon,3,4,2,4 hrs,10 hrs,car,"Study, run errands"
+04/22/2025,No,N/A,5,4,1,3 hrs,8 hrs,N/A,N/A
+04/23/25,No,N/A,4,5,1,3 hrs,9 hrs,N/A,N/A
+04/24/2025,No,N/A,4,5,0,4 hrs,7 hrs,N/A,N/A
+04/25/2025,Yes,night,4,5,1,3 hrs,8 hrs,car,dinner/movies
+04/26/2025,Yes,morning,5,4,1,4 hrs,6 hrs,walk,work
+04/26/2025,Yes,evening,5,4,1,4 hrs,6 hrs,bus + car,dinner
+04/27/2025,Yes,afternoon,4,2,1,5 hrs,10 hrs,car,shopping
+04/28/2025,No,N/A,4,4,0,4 hrs,9 hrs,N/A,N/A
+05/01/2025,Yes,evening,3,2,1,5 hrs,7 hrs,car,dinner
+05/05/2025,No,N/A,6,2,0,2 hrs, 8 hrs,N/A,N/A
+05/06/2025,Yes,evening,6,2,1,4 hrs,7 hrs,car,concert
+05/07/2025,Yes,afternoon,4,0,1,8 hrs,9 hrs,car,concert
+05/08/2025,No,N/A,2,2,0,12 hrs,9 hrs,N/A,N/A
+05/09/2025,Yes,night,2,2,1,10 hrs,9 hrs,car,party
+05/10/2025,Yes,evening,3,2,1,12 hrs,9 hrs,car,dinner
+05/11/2025,Yes,afternoon,4,1,0,7 hrs,8 hrs,car,school
+05/12/2025,No,N/A,4,3,0,4 hrs,8 hrs,N/A,N/A
+05/13/2025,No,N/A,3,2,0,5 hrs,8 hrs,N/A,N/A
+05/14/2025,No,N/A,3,3,0,4 hrs,7 hrs,N/A,N/A
+05/15/2025,Yes,evening,5,4,2,3 hrs,7 hrs,car,work
+05/16/2025,No,N/A,6,2,0,6 hrs,6 hrs,N/A,N/A
+05/17/2025,Yes,morning,5,2,2,4 hrs,7 hrs,car,work
+05/17/2025,Yes,night,7,2,2,4 hrs,7 hrs,car,dinner
+05/18/2025,No,afternoon,3,2,1,5 hrs,8 hrs,N/A,N/A
+05/19/2025,No,N/A,6,2,1,4 hrs,6 hrs,N/A,N/A
+05/20/2025,Yes,morning,5,3,0,4 hrs,7 hrs,N/A,N/A
