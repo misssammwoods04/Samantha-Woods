@@ -1,6 +1,7 @@
 ---
-title: "Coding Project"
+title: "Coding"
 format: html
 image: code.gif
+title-block-banner: true
 ---
 
