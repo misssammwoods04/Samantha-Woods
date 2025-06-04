@@ -28,4 +28,4 @@ Click on each piece to learn more about my projects!
   });
 </script>
 
-<a href="https://procreate.com/procreate">What is Procreate? </a>
+<a href="https://procreate.com/procreate" class="button">Click Me </a>
