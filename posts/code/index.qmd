@@ -15,7 +15,8 @@ library(tidyverse)
 library(janitor)
 library(ggplot2)
 library(here)
-
+library(DHARMa)
+library(ggeffects)
 # read in packages 
 
 ```
@@ -42,7 +43,7 @@ ggplot(data = clean_p_data, # data frame
 aes(x = amount_of_sleep, # make x-axis = amount of sleep
 y = stress_level, # make y-axis = stress level 
 color = amount_of_sleep)) + # color 
-geom_jitter() +# jitterplot 
+geom_point() +# jitterplot 
   
 labs(
   title = "Sleep vs. Stress Levels", # change title
@@ -53,7 +54,45 @@ labs(
 ```
 
 
+```{r}
+ggplot(clean_p_data, 
+      aes(x = leave_iv_campus_home, y = stress_level, color = leave_iv_campus_home)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.3, color = "orange") +
+  geom_jitter(width = 0.2, height = 0, alpha = 0.6) +
+  labs(title = "Stress Level by Leaving Campus", 
+       x = "Did I Leave Campus?", 
+       y = "Stress Level", 
+       color = "Left Campus?") +
+  theme_minimal()
+```
 
 
+```{r}
+
+clean_p_data <- clean_p_data |>
+  mutate(leave_iv_campus_home = as.factor(leave_iv_campus_home))
+
+p_mod <- glm(leave_iv_campus_home ~ stress_level,
+             data = clean_p_data,
+             family = "binomial")
+
+plot(
+  simulateResiduals(p_mod)
+)
+
+summary(p_mod)
+
+gtsummary::tbl_regression(p_mod,
+                          exponentiate = TRUE)
+
+ggpredict (p_mod,
+           terms = "stress_level [4]")
+
+ggpredict(p_mod,
+          terms = "stress_level [5]")
+
+ggpredict(p_mod,
+          terms = "stress_level [6]")
+```
 
 
