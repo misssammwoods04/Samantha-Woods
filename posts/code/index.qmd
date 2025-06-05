@@ -4,6 +4,11 @@ description: A sample of code from my Environmental Statistics class
 format: html
 image: code.gif
 categories: Coding 
+about: 
+  template: jolla
+  links:
+    - text: What is a logistic regression?
+      href: https://pmc.ncbi.nlm.nih.gov/articles/PMC3936971/
 ---
 
 This is a sample of my code from my personal data project for my Environmental Statistics class! I coded a plot of my data to show each data point given on hours of sleep on the x-axis (predictor variable) and stress level on the y-axis (response variable).
