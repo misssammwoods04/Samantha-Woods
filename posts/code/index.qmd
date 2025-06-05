@@ -39,31 +39,18 @@ clean_p_data <- clean_p_data |>  # modify data frame
 ```
 
 ```{r graph, message=FALSE, warning=FALSE}
+
 ggplot(data = clean_p_data, # data frame
-aes(x = amount_of_sleep, # make x-axis = amount of sleep
-y = stress_level, # make y-axis = stress level 
-color = amount_of_sleep)) + # color 
-geom_point() +# jitterplot 
-  
-labs(
-  title = "Sleep vs. Stress Levels", # change title
-  x = "Hours of Sleep", # change name of x axis
-  y = "Stress Level", # change name of y axis
-  color = "Amount of Sleep") # change name of legend 
+       aes(x = amount_of_sleep, # make x-axis = amount of sleep
+           y = stress_level, # make y-axis = stress level
+           color = amount_of_sleep)) + # color
+  geom_jitter(width = 0.2, height = 0, alpha = 0.7) +  # add jitter to show all data points
+  labs(
+    title = "Sleep vs. Stress Levels", # change title
+    x = "Hours of Sleep", # change name of x axis
+    y = "Stress Level", # change name of y axis
+    color = "Amount of Sleep") # change name of legend 
 
-```
-
-
-```{r}
-ggplot(clean_p_data, 
-      aes(x = leave_iv_campus_home, y = stress_level, color = leave_iv_campus_home)) +
-  geom_boxplot(outlier.shape = NA, alpha = 0.3, color = "orange") +
-  geom_jitter(width = 0.2, height = 0, alpha = 0.6) +
-  labs(title = "Stress Level by Leaving Campus", 
-       x = "Did I Leave Campus?", 
-       y = "Stress Level", 
-       color = "Left Campus?") +
-  theme_minimal()
 ```
 
 
