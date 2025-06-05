@@ -6,7 +6,7 @@ image: code.gif
 categories: Coding 
 ---
 
-This is a sample of my code from my personal data project for my Environmental Statistics class! I coded a plot of my data to show if there is any correlation between my hours of sleep (predictor variable) and my stress level (response variable). 
+This is a sample of my code from my personal data project for my Environmental Statistics class! I coded a plot of my data to show each data point given on hours of sleep on the x-axis (predictor variable) and stress level on the y-axis (response variable).
 
 
 
@@ -37,6 +37,18 @@ clean_p_data <- clean_p_data |>  # modify data frame
                                        "5 hrs", "6 hrs", "7 hrs", 
                                        "8 hrs", "9 hrs", "10 hrs")) # reorder data so that it is represented in numerical order
 ```
+
+
+
+
+Additionally, I ran a logistic regression (a generalized linear model with a binomial error distribution) because my response variable is binary — the question of whether I left campus can be answered with either "yes" (coded as 1) or "no" (coded as 0). This model allowed me to test whether there is a relationship between my predictor (stress level) and my outcome (leaving campus).
+
+I calculated the odds ratio, which tells me how the odds of leaving campus change with a one-unit increase in stress. The odds ratio was 1, indicating that stress level has no effect on the likelihood of leaving campus.
+
+I confirmed this by looking at the predicted probabilities for different stress levels. Each level produced the same predicted probability, suggesting that stress has no statistically significant impact on the outcome.
+
+Based on this analysis, I found no evidence of a correlation between stress level and the likelihood of leaving campus.
+
 
 ```{r graph, message=FALSE, warning=FALSE}
 
