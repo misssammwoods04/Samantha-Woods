@@ -237,16 +237,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>I confirmed this by looking at the predicted probabilities for different stress levels. Each level produced the same predicted probability, suggesting that stress has no statistically significant impact on the outcome.</p>
 <p>Based on this analysis, I found no evidence of a correlation between stress level and the likelihood of leaving campus.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>clean_p_data <span class="ot">&lt;-</span> clean_p_data <span class="sc">|&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">leave_iv_campus_home =</span> <span class="fu">as.factor</span>(leave_iv_campus_home))</span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>clean_p_data <span class="ot">&lt;-</span> clean_p_data <span class="sc">|&gt;</span> <span class="co"># data frame</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">leave_iv_campus_home =</span> <span class="fu">as.factor</span>(leave_iv_campus_home)) <span class="co"># codes yes = 1, no = 0</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>p_mod <span class="ot">&lt;-</span> <span class="fu">glm</span>(leave_iv_campus_home <span class="sc">~</span> stress_level,</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">data =</span> clean_p_data,</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">family =</span> <span class="st">"binomial"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>p_mod <span class="ot">&lt;-</span> <span class="fu">glm</span>(leave_iv_campus_home <span class="sc">~</span> stress_level, <span class="co"># creates model for linear regression</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">data =</span> clean_p_data, <span class="co"># data frame</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">family =</span> <span class="st">"binomial"</span>) <span class="co"># identifies model a binomial</span></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">simulateResiduals</span>(p_mod)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate and plot residuals</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">simulateResiduals</span>(p_mod) </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -254,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(p_mod)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(p_mod) <span class="co"># gives summary of logistic regression model</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -275,25 +276,25 @@ AIC: 45.38
 Number of Fisher Scoring iterations: 4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>gtsummary<span class="sc">::</span><span class="fu">tbl_regression</span>(p_mod,</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">exponentiate =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="co"># exponentiates logistic regression model </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="wdaoufjrel" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wdaoufjrel table {
+<div id="lemmlfvymp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lemmlfvymp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wdaoufjrel thead, #wdaoufjrel tbody, #wdaoufjrel tfoot, #wdaoufjrel tr, #wdaoufjrel td, #wdaoufjrel th {
+#lemmlfvymp thead, #lemmlfvymp tbody, #lemmlfvymp tfoot, #lemmlfvymp tr, #lemmlfvymp td, #lemmlfvymp th {
   border-style: none;
 }
 
-#wdaoufjrel p {
+#lemmlfvymp p {
   margin: 0;
   padding: 0;
 }
 
-#wdaoufjrel .gt_table {
+#lemmlfvymp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -319,12 +320,12 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_caption {
+#lemmlfvymp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wdaoufjrel .gt_title {
+#lemmlfvymp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -336,7 +337,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-bottom-width: 0;
 }
 
-#wdaoufjrel .gt_subtitle {
+#lemmlfvymp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -348,7 +349,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-top-width: 0;
 }
 
-#wdaoufjrel .gt_heading {
+#lemmlfvymp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -360,13 +361,13 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_bottom_border {
+#lemmlfvymp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_col_headings {
+#lemmlfvymp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -381,7 +382,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_col_heading {
+#lemmlfvymp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -401,7 +402,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   overflow-x: hidden;
 }
 
-#wdaoufjrel .gt_column_spanner_outer {
+#lemmlfvymp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -413,15 +414,15 @@ Number of Fisher Scoring iterations: 4</code></pre>
   padding-right: 4px;
 }
 
-#wdaoufjrel .gt_column_spanner_outer:first-child {
+#lemmlfvymp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wdaoufjrel .gt_column_spanner_outer:last-child {
+#lemmlfvymp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wdaoufjrel .gt_column_spanner {
+#lemmlfvymp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -433,11 +434,11 @@ Number of Fisher Scoring iterations: 4</code></pre>
   width: 100%;
 }
 
-#wdaoufjrel .gt_spanner_row {
+#lemmlfvymp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wdaoufjrel .gt_group_heading {
+#lemmlfvymp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -463,7 +464,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   text-align: left;
 }
 
-#wdaoufjrel .gt_empty_group_heading {
+#lemmlfvymp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -478,15 +479,15 @@ Number of Fisher Scoring iterations: 4</code></pre>
   vertical-align: middle;
 }
 
-#wdaoufjrel .gt_from_md > :first-child {
+#lemmlfvymp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wdaoufjrel .gt_from_md > :last-child {
+#lemmlfvymp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wdaoufjrel .gt_row {
+#lemmlfvymp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -505,7 +506,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   overflow-x: hidden;
 }
 
-#wdaoufjrel .gt_stub {
+#lemmlfvymp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -518,7 +519,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   padding-right: 5px;
 }
 
-#wdaoufjrel .gt_stub_row_group {
+#lemmlfvymp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -532,15 +533,15 @@ Number of Fisher Scoring iterations: 4</code></pre>
   vertical-align: top;
 }
 
-#wdaoufjrel .gt_row_group_first td {
+#lemmlfvymp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wdaoufjrel .gt_row_group_first th {
+#lemmlfvymp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wdaoufjrel .gt_summary_row {
+#lemmlfvymp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -550,16 +551,16 @@ Number of Fisher Scoring iterations: 4</code></pre>
   padding-right: 5px;
 }
 
-#wdaoufjrel .gt_first_summary_row {
+#lemmlfvymp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_first_summary_row.thick {
+#lemmlfvymp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wdaoufjrel .gt_last_summary_row {
+#lemmlfvymp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -569,7 +570,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_grand_summary_row {
+#lemmlfvymp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -579,7 +580,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   padding-right: 5px;
 }
 
-#wdaoufjrel .gt_first_grand_summary_row {
+#lemmlfvymp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -589,7 +590,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_last_grand_summary_row_top {
+#lemmlfvymp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -599,11 +600,11 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_striped {
+#lemmlfvymp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wdaoufjrel .gt_table_body {
+#lemmlfvymp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -612,7 +613,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_footnotes {
+#lemmlfvymp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -626,7 +627,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_footnote {
+#lemmlfvymp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -635,7 +636,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   padding-right: 5px;
 }
 
-#wdaoufjrel .gt_sourcenotes {
+#lemmlfvymp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -649,7 +650,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wdaoufjrel .gt_sourcenote {
+#lemmlfvymp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -657,72 +658,72 @@ Number of Fisher Scoring iterations: 4</code></pre>
   padding-right: 5px;
 }
 
-#wdaoufjrel .gt_left {
+#lemmlfvymp .gt_left {
   text-align: left;
 }
 
-#wdaoufjrel .gt_center {
+#lemmlfvymp .gt_center {
   text-align: center;
 }
 
-#wdaoufjrel .gt_right {
+#lemmlfvymp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wdaoufjrel .gt_font_normal {
+#lemmlfvymp .gt_font_normal {
   font-weight: normal;
 }
 
-#wdaoufjrel .gt_font_bold {
+#lemmlfvymp .gt_font_bold {
   font-weight: bold;
 }
 
-#wdaoufjrel .gt_font_italic {
+#lemmlfvymp .gt_font_italic {
   font-style: italic;
 }
 
-#wdaoufjrel .gt_super {
+#lemmlfvymp .gt_super {
   font-size: 65%;
 }
 
-#wdaoufjrel .gt_footnote_marks {
+#lemmlfvymp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wdaoufjrel .gt_asterisk {
+#lemmlfvymp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wdaoufjrel .gt_indent_1 {
+#lemmlfvymp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wdaoufjrel .gt_indent_2 {
+#lemmlfvymp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wdaoufjrel .gt_indent_3 {
+#lemmlfvymp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wdaoufjrel .gt_indent_4 {
+#lemmlfvymp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wdaoufjrel .gt_indent_5 {
+#lemmlfvymp .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wdaoufjrel .katex-display {
+#lemmlfvymp .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wdaoufjrel div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#lemmlfvymp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -754,7 +755,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 </div>
 </div>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpredict</span> (p_mod,</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">terms =</span> <span class="st">"stress_level [4]"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">terms =</span> <span class="st">"stress_level [4]"</span>) <span class="co"># gives predicted probability for stress level = 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># Predicted probabilities of leave_iv_campus_home
 
@@ -763,7 +764,7 @@ stress_level | Predicted |     95% CI
            4 |      0.61 | 0.43, 0.77</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpredict</span>(p_mod,</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">terms =</span> <span class="st">"stress_level [5]"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">terms =</span> <span class="st">"stress_level [5]"</span>) <span class="co"># gives predicted probability for stress level = 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># Predicted probabilities of leave_iv_campus_home
 
@@ -772,7 +773,7 @@ stress_level | Predicted |     95% CI
            5 |      0.61 | 0.40, 0.79</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggpredict</span>(p_mod,</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">terms =</span> <span class="st">"stress_level [6]"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">terms =</span> <span class="st">"stress_level [6]"</span>) <span class="co"># gives predicted probability for stress level = 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># Predicted probabilities of leave_iv_campus_home
 

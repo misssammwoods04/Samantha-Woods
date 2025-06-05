@@ -71,30 +71,33 @@ Based on this analysis, I found no evidence of a correlation between stress leve
 
 ```{r}
 
-clean_p_data <- clean_p_data |>
-  mutate(leave_iv_campus_home = as.factor(leave_iv_campus_home))
+clean_p_data <- clean_p_data |> # data frame
+  mutate(leave_iv_campus_home = as.factor(leave_iv_campus_home)) # codes yes = 1, no = 0
 
-p_mod <- glm(leave_iv_campus_home ~ stress_level,
-             data = clean_p_data,
-             family = "binomial")
+p_mod <- glm(leave_iv_campus_home ~ stress_level, # creates model for linear regression
+             data = clean_p_data, # data frame
+             family = "binomial") # identifies model a binomial
 
+# Simulate and plot residuals
 plot(
-  simulateResiduals(p_mod)
+  simulateResiduals(p_mod) 
 )
 
-summary(p_mod)
+summary(p_mod) # gives summary of logistic regression model
 
 gtsummary::tbl_regression(p_mod,
-                          exponentiate = TRUE)
+                          exponentiate = TRUE) # exponentiates logistic regression model 
 
 ggpredict (p_mod,
-           terms = "stress_level [4]")
+           terms = "stress_level [4]") # gives predicted probability for stress level = 4
 
 ggpredict(p_mod,
-          terms = "stress_level [5]")
+          terms = "stress_level [5]") # gives predicted probability for stress level = 5
+
 
 ggpredict(p_mod,
-          terms = "stress_level [6]")
+          terms = "stress_level [6]") # gives predicted probability for stress level = 6
+
 ```
 
 
