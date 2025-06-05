@@ -59,7 +59,7 @@ ggplot(data = clean_p_data, # data frame
 ___
 
 
-Additionally, I ran a logistic regression (a generalized linear model with a binomial error distribution) because my response variable is binary — the question of whether I left campus can be answered with either "yes" (coded as 1) or "no" (coded as 0). This model allowed me to test whether there is a relationship between my predictor (stress level) and my outcome (leaving campus).
+Additionally, I ran a logistic regression (a generalized linear model with a binomial error distribution) because my response variable is binary — the question of whether I left campus can be answered with either "yes" (coded as 1) or "no" (coded as 0). This model allowed me to test whether there is a correlation between my predictor (stress level) and my outcome (leaving campus).
 
 I calculated the odds ratio, which tells me how the odds of leaving campus change with a one-unit increase in stress. The odds ratio was 1, indicating that stress level has no effect on the likelihood of leaving campus.
 
